@@ -16,6 +16,7 @@
 		<StackPanel Grid.Column="1">
 			<Button Margin="10,2" Content="Open" Click="open" />
 			<Button Margin="10,2" Content="Blink" Click="blink" />
+			<Button Margin="10,2" Content="Stop Blinking" Click="stopBlink" />
 		</StackPanel>
 	</Grid>
 </Window>

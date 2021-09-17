@@ -29,6 +29,7 @@ namespace VisualDemo
 		public MainWindow()
 		{
 			InitializeComponent();
+			IfcStore.ModelProviderFactory.UseHeuristicModelProvider();
 		}
 
 		private void open(object sender, RoutedEventArgs e)
@@ -62,12 +63,11 @@ namespace VisualDemo
 				{
 					var context = new Xbim3DModelContext(model);
 					context.CreateContext();
-
 					// TODO: SaveAs(xbimFile); // so we don't re-process every time
 				}
 				catch (Exception geomEx)
 				{
-					// todo: log any error
+					Console.WriteLine($"ERROR:{geomEx.Message}");
 				}
 			}
 			clear();
@@ -104,6 +104,11 @@ namespace VisualDemo
 			ils.SetAnimationTime(100); // base time multiplier 
 			ils.SetAnimation(W1, Colors.Red, Colors.Green, 5);
 			ils.SetAnimation(W2, Colors.Blue, Colors.Yellow, 3);
+		}
+
+		private void stopBlink(object sender, RoutedEventArgs e)
+		{
+			ils.RemoveAnimation(true);
 		}
 	}
 }

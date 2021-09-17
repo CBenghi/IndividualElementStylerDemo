@@ -29,15 +29,16 @@
     <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.5.3" />
     <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
-    <PackageReference Include="Xbim.Common" Version="5.1.324" />
+    <PackageReference Include="Xbim.Common" Version="5.1.333-develop" />
     <PackageReference Include="Xbim.Geometry" Version="5.1.430" />
     <PackageReference Include="Xbim.Geometry.Engine.Interop" Version="5.1.430" />
-    <PackageReference Include="Xbim.Ifc" Version="5.1.324" />
-    <PackageReference Include="Xbim.Ifc2x3" Version="5.1.324" />
-    <PackageReference Include="Xbim.Ifc4" Version="5.1.324" />
-    <PackageReference Include="Xbim.IO.MemoryModel" Version="5.1.324" />
+    <PackageReference Include="Xbim.Ifc" Version="5.1.333-develop" />
+    <PackageReference Include="Xbim.Ifc2x3" Version="5.1.333-develop" />
+    <PackageReference Include="Xbim.Ifc4" Version="5.1.333-develop" />
+    <PackageReference Include="Xbim.IO.Esent" Version="5.1.333-develop" />
+    <PackageReference Include="Xbim.IO.MemoryModel" Version="5.1.333-develop" />
     <PackageReference Include="Xbim.ModelGeometry.Scene" Version="5.1.430" />
-    <PackageReference Include="Xbim.Tessellator" Version="5.1.324" />
+    <PackageReference Include="Xbim.Tessellator" Version="5.1.333-develop" />
     <PackageReference Include="Xbim.WindowsUI" Version="5.1.219-feat" />
   </ItemGroup>
   <Import Project="..\packages\Xbim.Geometry.Engine.Interop.5.1.430\build\net472\Xbim.Geometry.Engine.Interop.targets" Condition="Exists('..\packages\Xbim.Geometry.Engine.Interop.5.1.430\build\net472\Xbim.Geometry.Engine.Interop.targets')" />
