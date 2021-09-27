@@ -8,15 +8,37 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-		<Grid.ColumnDefinitions >
-			<ColumnDefinition Width="2*" />
-			<ColumnDefinition Width="1*" />
-		</Grid.ColumnDefinitions>
-		<xbim:DrawingControl3D x:Name="myControl" />
-		<StackPanel Grid.Column="1">
-			<Button Margin="10,2" Content="Open" Click="open" />
-			<Button Margin="10,2" Content="Blink" Click="blink" />
-			<Button Margin="10,2" Content="Stop Blinking" Click="stopBlink" />
-		</StackPanel>
-	</Grid>
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <xbim:DrawingControl3D x:Name="myControl" />
+
+        <Border Grid.Column="1" BorderBrush="Gray" BorderThickness="2" DockPanel.Dock="Top">
+            <StackPanel Grid.Column="1">
+                
+            <Button Margin="10,2" Content="Open" Click="open" />
+            <Separator></Separator>
+            <Button Margin="10,2" Content="Blink" Click="blink" />
+            <Button Margin="10,2" Content="Stop Blinking" Click="stopBlink" />
+            <Separator></Separator>
+            <Button Margin="10,2" Content="Blink Space" Click="blinkSpace" />
+            <Button Margin="10,2" Content="Blink Space 2" Click="blinkSpace2" />
+            <Button Margin="10,2" Content="Stop Blinking Space" Click="stopBlinkingSpace" />
+            <Separator></Separator>
+            <Button Margin="10,2" Content="Color space" Click="colorSpace" />
+            <Button Margin="10,2" Content="Color space 2" Click="colorSpace2" />
+            <Button Margin="10,2" Content="Reset color space" Click="resetColorSpace" />
+            <Separator></Separator>
+            <Button Margin="10,2" Content="Color" Click="color" />
+            <Button Margin="10,2" Content="Color2" Click="color2" />
+            <Button Margin="10,2" Content="Reset color" Click="resetColor" />
+            <Separator></Separator>
+            <Button Margin="10,2" Content="Color Furnitures with StateColors" Click="colorFurnituresWithSetColors" />
+            <Button Margin="10,2" Content="Color Furnitures with Color" Click="colorFurnituresWithColor" />
+            <Button Margin="10,2" Content="Reset color furnitures" Click="resetColorFurnitures" />
+        </StackPanel>
+        </Border>
+
+    </Grid>
 </Window>
